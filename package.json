@@ -1,6 +1,6 @@
 {
   "name": "carousel_component_overblaster_supreme_of_the_galaxy",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Carousel component for React",
   "main": "build/index.js",
   "scripts": {
@@ -28,5 +28,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "webpack-cli": "^3.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatheusFullstackOverkill/carousel_component_overblaster_supreme_of_the_galaxy"
   }
 }
