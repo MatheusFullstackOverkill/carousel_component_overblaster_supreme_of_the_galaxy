@@ -1,6 +1,6 @@
 ## React component for a simple carousel
 
-####Javascript
+##Javascript
 
     import React, { Component } from 'react';
     //Import Carousel 
