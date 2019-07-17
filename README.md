@@ -37,6 +37,6 @@
 | speed         | Number       | Defines the speed of the autoSlide in miliseconds |
 | arrows        | Boolean      | Defines if the arrows should appear |
 | dots          | Boolean      | Defines if the dots should appear |
-
+|allowMouseEvents | Boolen     | Defines if the slider should stop on *mouseEnter* and continue on *mouseLeave*
 
 PS: I know the name it's kind of silly, i just wanted to know how to upload to npm and help someone in the process.

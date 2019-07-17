@@ -153,16 +153,20 @@ export default class Carousel extends Component {
 
         return (
             <div className='carousel' ref={this.carrousel} onMouseEnter={() => {
-                clearInterval(this.state.interval);
-                this.setState({speed: 500});
+                if(this.props.allowMouseEvents) {
+                    clearInterval(this.state.interval);
+                    this.setState({speed: 500});
+                }
             }} onMouseLeave={() => {
                 if(this.state.autoSlide && this.state.infinity) {
-                    let interval = setInterval(this.slideAnimation, this.state.speed);
-                    this.setState({interval: interval});
-                    if(this.props.speed) {
-                        this.setState({speed: this.props.speed});
-                    } else {
-                        this.setState({speed: 2000});
+                    if(this.props.allowMouseEvents) {
+                        let interval = setInterval(this.slideAnimation, this.state.speed);
+                        this.setState({interval: interval});
+                        if(this.props.speed) {
+                            this.setState({speed: this.props.speed});
+                        } else {
+                            this.setState({speed: 2000});
+                        }
                     }
                 };
             }}>
