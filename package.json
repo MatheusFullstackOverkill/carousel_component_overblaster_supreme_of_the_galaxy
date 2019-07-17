@@ -1,6 +1,6 @@
 {
   "name": "carousel_component_overblaster_supreme_of_the_galaxy",
-  "version": "2.0.9",
+  "version": "3.0.1",
   "description": "Carousel component for React",
   "main": "build/index.js",
   "scripts": {

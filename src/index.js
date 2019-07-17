@@ -87,10 +87,14 @@ export default class Carousel extends Component {
     };
 
     componentDidMount() {
-        console.log(this.props.speed);
+        console.log(this.props.children);
+        console.log(this.props.children[0]);
         this.setState({carrousel: this.carrousel.current});
         this.setState({fullCarrousel: this.fullCarrousel.current});
         this.setState({slideWidth: this.carrousel.current.clientWidth});
+        Array.from(this.fullCarrousel.current.childNodes).map((item, index) => {
+            item.style.width = this.carrousel.current.clientWidth+'px';
+        });
         this.setState({left: -this.carrousel.current.clientWidth});
         this.setState(this.props, () => {
             if(this.props.autoSlide && this.props.infinity) {
